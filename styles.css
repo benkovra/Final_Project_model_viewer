@@ -2,17 +2,36 @@
   display: none;
 }
 
+h1, h2 {
+  text-align: center;
+  color: white;
+
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px rgb(255, 0, 242),
+        0 0 82px rgb(255, 0, 242),
+        0 0 92px rgb(255, 0, 242),
+        0 0 102px rgb(255, 0, 242),
+        0 0 151px rgb(255, 0, 242);
+                  
+  @import url('https://fonts.googleapis.com/css?family=Sarpanch:900');
+}
+
 body {
   margin: 0;
   padding: 0;
   width: 100vw;
   height: 100vh;
+  background-color: #396141;
 }
 
 model-viewer {
   width: 100%;
   height: 90%;
-  background-color: #ffffff;
+  background-color: #396141;
 }
 
 .Hotspot {
@@ -162,4 +181,19 @@ model-viewer[ar-status="session-started"] > #ar-prompt {
 
 model-viewer > #ar-prompt > img {
   animation: circle 4s linear infinite;
+}
+footer { 
+  margin-top: 2rem;
+  background-color: var(--ltmid);
+  padding: 1rem 2rem;
+  display: flex;
+  height: 6rem;
+  justify-content: space-between;
+  align-items: center;
+}
+footer p {
+  width: 100%;
+  text-align: center;
+  font-weight: 500; 
+  color: white;
 }
